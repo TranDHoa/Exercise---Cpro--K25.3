@@ -1,12 +1,12 @@
 # Tên file thực thi
-TARGET = Library_Mgr
+TARGET = He thong tuoi cay tu dong thong minh
 
 # Thư mục gốc chứa mã nguồn
 SRC_DIR = .
 
 # Thư mục chứa các file .c của các component
 # Học viên chỉ cần thêm tên thư mục component mới vào danh sách này
-COMPONENTS = Book_Mgr
+COMPONENTS = button config Sensor_actuators watering_logic
 
 # Thư mục App chứa main.c
 APP_DIR = App
