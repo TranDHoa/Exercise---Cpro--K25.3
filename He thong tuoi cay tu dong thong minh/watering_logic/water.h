@@ -19,7 +19,7 @@
 
 
 // local function prototype
-void watering_start_time(config *cfg)
+void watering_start_time(config *cfg);
 
 void watering_logic_auto(config *cfg,SENSOR *data);
 

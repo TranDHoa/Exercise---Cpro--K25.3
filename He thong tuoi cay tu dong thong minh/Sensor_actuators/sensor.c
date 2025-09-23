@@ -21,8 +21,8 @@ void sensor_read(SENSOR *data)
     if(data->do_am > 100) data->do_am = 100;
 
     data->nhiet_do += (delta/10);
-    printf("Do am la: %f", data->do_am);
-    printf("Nhiet do la: %f",data->nhiet_do);
+    printf("\nDo am la: %f", data->do_am);
+    printf("\nNhiet do la: %f\n",data->nhiet_do);
 
 }
 
@@ -36,13 +36,13 @@ void actuators_init(void)
 void GET_PUMP_ON(void)
 {
     pump_state = pump_on;
-    printf("May bom dang o che do: ON");
+    printf("\nMay bom dang o che do: ON");
 }
 
 void GET_PUMP_OFF(void)
 {
     pump_state = pump_off;
-    printf("May bom dang o che do: OFF");
+    printf("\nMay bom dang o che do: OFF");
 }
 
 PUMP get_pump(void)

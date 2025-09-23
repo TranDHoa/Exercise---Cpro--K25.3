@@ -1,5 +1,5 @@
 # Tên file thực thi
-TARGET = He thong tuoi cay tu dong thong minh
+TARGET = He_thong_tuoi_cay_tu_dong_thong_minh
 
 # Thư mục gốc chứa mã nguồn
 SRC_DIR = .

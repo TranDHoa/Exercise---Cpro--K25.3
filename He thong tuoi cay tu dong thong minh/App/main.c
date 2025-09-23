@@ -33,32 +33,23 @@ int main(void)
     button_init();
     sensor_init();
     actuators_init();
-    watering_start_time(cfg);
+    watering_start_time(&cfg);
 
     while(1){
         sensor_read(&sensor);
-        button_state = get_button();
+        BUTTON button_state = get_button();
         if(button_state == button_toggle){
-            watering_toggle(cfg,sensor);
+            watering_toggle(&cfg,&sensor);
         }
-        if(button_state == button_on) return;
+        if(button_state == button_on) return 0;
         else
         {
             if(cfg.mode == mode_auto){
-                watering_logic_auto(cfg,sensor);
-                    
+                watering_logic_auto(&cfg,&sensor);      
             }
-            else watering_logic_manual(cfg);
+            else watering_logic_manual(&cfg);
         }
-
-        else
-
-
-
     }
-
-
-
     return 0;
 }
 

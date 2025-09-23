@@ -24,7 +24,7 @@ typedef enum{
     button_toggle,
     button_on,
     button_off
-}BUTTON;
+} BUTTON;
 
 void button_init(void);
 void get_button_on(void);

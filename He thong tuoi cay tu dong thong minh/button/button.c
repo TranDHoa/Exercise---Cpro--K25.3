@@ -12,11 +12,11 @@ void button_init(void){
 }
 void get_button_on(void){
     button_state = button_on;
-    printf("Cong tac dang bat");
+    printf("\nCong tac dang bat");
 }
 void get_button_off(void){
     button_state = button_off;
-    printf("Cong tac dang tat");
+    printf("\nCong tac dang tat");
 }
 
 BUTTON get_button(void)
